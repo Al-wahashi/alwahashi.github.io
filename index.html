@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>أجمل ماركات الوهاشي — Al Wahashi</title>
+  <style>
+    :root{
+      --bg:#080808;
+      --card:#0f0f0f;
+      --gold1:#d4af37;
+      --gold2:#ffd66b;
+      --muted:#c7c2b8;
+      --radius:14px;
+      font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+    }
+    html,body{height:100%;margin:0;padding:0;}
+    body{
+      background: radial-gradient(circle at 10% 10%, rgba(212,175,55,0.04), transparent 10%), var(--bg);
+      color:#fff;
+      padding:18px;
+      -webkit-font-smoothing:antialiased;
+    }
+    .container{max-width:980px;margin:0 auto;}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.12));border-radius:12px;padding:18px;border:1px solid rgba(212,175,55,0.06);box-shadow:0 10px 30px rgba(0,0,0,0.6);}
+    header{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:84px;height:84px;border-radius:12px;background:linear-gradient(135deg,var(--gold1),var(--gold2));display:flex;align-items:center;justify-content:center;color:#0b0b0b;font-weight:800;font-size:20px}
+    .title h1{margin:0;font-size:20px;color:var(--gold2);direction:rtl}
+    .title p{margin:6px 0 0 0;color:var(--muted);font-size:13px}
+    .lang-switch{display:flex;gap:8px;align-items:center}
+    .lang-switch button{background:transparent;border:1px solid rgba(212,175,55,0.2);color:var(--gold2);padding:6px 10px;border-radius:8px;cursor:pointer}
+    .main{display:grid;grid-template-columns:1fr 360px;gap:18px;margin-top:18px}
+    @media(max-width:880px){.main{grid-template-columns:1fr}}
+    .desc{background: linear-gradient(90deg, rgba(212,175,55,0.03), rgba(255,214,107,0.01));padding:14px;border-radius:10px;border:1px solid rgba(212,175,55,0.04);color:#f7f5f1}
+    .socials{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 12px;border-radius:10px;text-decoration:none;color:#0b0b0b;font-weight:700;background:var(--gold1)}
+    .btn.secondary{background:linear-gradient(90deg,var(--gold2),var(--gold1))}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}
+    @media(max-width:640px){.gallery{grid-template-columns:repeat(2,1fr)}}
+    .product{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.22));border-radius:10px;padding:10px;text-align:center;border:1px solid rgba(212,175,55,0.04)}
+    .product img{width:100%;height:130px;object-fit:cover;border-radius:8px;margin-bottom:8px}
+    .product h4{margin:4px 0 0 0;font-size:14px;color:var(--gold2)}
+    .side{display:flex;flex-direction:column;gap:12px;align-items:center}
+    .qr{background:var(--card);padding:12px;border-radius:12px;display:flex;flex-direction:column;gap:12px;align-items:center;width:100%}
+    .qr img{width:220px;height:220px;object-fit:cover;border-radius:6px;background:#fff;padding:6px}
+    footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
+    .toggle{display:none}
+    /* English styles when lang=en */
+    body[lang="en"]{direction:ltr;font-family: "Segoe UI", Arial, sans-serif}
+    body[lang="en"] .title h1{color:var(--gold2);font-size:20px}
+    body[lang="en"] .logo{font-size:18px}
+    .muted{color:var(--muted);font-size:13px}
+  </style>
+</head>
+<body lang="ar">
+  <div class="container card">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true">و</div>
+        <div class="title">
+          <h1 id="brandTitle_ar">أجمل ماركات الوهاشي</h1>
+          <p id="subtitle_ar">عطور ✨ مكياج ✨ بخور ✨ إكسسوارات</p>
+          <h1 id="brandTitle_en" style="display:none">Al Wahashi — Finest Brands</h1>
+          <p id="subtitle_en" style="display:none">Perfumes · Makeup · Incense · Accessories</p>
+        </div>
+      </div>
+
+      <div style="text-align:left;">
+        <div class="muted">📞 Contact</div>
+        <div style="font-weight:800;color:var(--gold2);font-size:16px;margin-top:6px" id="phone">733520114</div>
+      </div>
+
+      <div class="lang-switch">
+        <button id="toAr">العربية</button>
+        <button id="toEn">English</button>
+      </div>
+    </header>
+
+    <div class="main">
+      <div class="info">
+        <div class="desc" id="desc_ar">
+          <strong style="color:var(--gold2);font-size:16px">✨ أجمل ماركات الوهاشي ✨</strong>
+          <p style="margin:8px 0">عطورات ✨ مكياج ✨ بخور ✨ إكسسوارات ✨<br>جمالك يبدأ من هنا… وكل جديد عندنا 👑</p>
+          <p class="muted">📍 البيضاء – شارع النور، بجوار مفروشات الشرفي<br>عروضنا مستمرة 💥 وجودتنا مضمونة ✅</p>
+        </div>
+        <div class="desc" id="desc_en" style="display:none;text-align:left">
+          <strong style="color:var(--gold2);font-size:16px">✨ Al Wahashi — Finest Brands ✨</strong>
+          <p style="margin:8px 0">Perfumes · Makeup · Incense · Accessories ·<br>Your beauty begins here… New items always in store 👑</p>
+          <p class="muted">📍 Al Bayda — Al Noor Street, next to Al Sharafi Furnishings<br>Offers ongoing 💥 Quality guaranteed ✅</p>
+        </div>
+
+        <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
+          <a class="btn" id="whatsapp_direct" href="https://wa.me/967733520114" target="_blank" rel="noopener">
+            واتساب مباشر / WhatsApp
+          </a>
+          <a class="btn secondary" href="https://whatsapp.com/channel/0029VbBjrey5q08eloLPeG3j" target="_blank" rel="noopener">قناة واتساب / WhatsApp Channel</a>
+        </div>
+
+        <div class="socials" style="margin-top:12px">
+          <a class="btn" href="https://www.facebook.com/share/1Md42iV3xb/" target="_blank" rel="noopener">فيسبوك / Facebook</a>
+          <a class="btn" href="https://www.tiktok.com/@passam7590348592718?_t=ZS-90sF4nNEvFY&_r=1" target="_blank" rel="noopener">تيك توك / TikTok</a>
+          <a class="btn" href="https://www.snapchat.com/add/ltyrlmhjr256072?share_id=ZKEnNCCqaL8&locale=ar-EG" target="_blank" rel="noopener">سناب شات / Snapchat</a>
+          <a class="btn" href="https://chat.whatsapp.com/E4hldiYfJ3R1NKlq2TU35S" target="_blank" rel="noopener">مجتمع واتساب / WhatsApp Group</a>
+        </div>
+
+        <div style="margin-top:16px">
+          <h3 style="color:var(--gold2);margin:0 0 8px 0">منتجات مختارة / Featured</h3>
+          <div class="gallery" role="list">
+            <div class="product">
+              <img src="assets/prod1.jpg" alt="عطر فاخر / Perfume">
+              <h4>عطر فاخر / Perfume</h4>
+            </div>
+            <div class="product">
+              <img src="assets/prod2.jpg" alt="مكياج مميز / Makeup">
+              <h4>مكياج مميز / Makeup</h4>
+            </div>
+            <div class="product">
+              <img src="assets/prod3.jpg" alt="بخور / Incense">
+              <h4>بخور وأكسسوارات / Incense & Accessories</h4>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <aside class="side">
+        <div class="qr">
+          <div style="text-align:center">
+            <div style="font-weight:700;color:var(--gold2);font-size:15px">امسح وارَنا — Scan & Visit</div>
+            <div style="color:var(--muted);font-size:13px">مسح الكود يفتح هذه الصفحة / Scanning opens this page</div>
+          </div>
+          <!-- QR image generated dynamically to point to the page URL when hosted -->
+          <img id="qrImage" alt="QR code to open this page" src="" />
+          <div class="meta muted" style="text-align:center">احفظ الصورة وشاركها / Save & share the QR</div>
+        </div>
+        <div style="width:100%;text-align:center;margin-top:6px">
+          <a class="btn" href="tel:733520114">اتصل الآن / Call Now</a>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      <div>© 2025 أجمل ماركات الوهاشي — Al Wahashi</div>
+      <div style="margin-top:6px" class="muted">تم إعداد الصفحة بواسطة المهندس / عبدالباري العبسي — يمكنك تعديل النصوص والروابط داخل ملف HTML</div>
+    </footer>
+  </div>
+
+  <script>
+    // language toggle
+    document.getElementById('toAr').addEventListener('click', function(){
+      document.body.lang = 'ar';
+      document.getElementById('desc_ar').style.display = '';
+      document.getElementById('desc_en').style.display = 'none';
+      document.getElementById('brandTitle_ar').style.display='';
+      document.getElementById('brandTitle_en').style.display='none';
+      document.getElementById('subtitle_ar').style.display='';
+      document.getElementById('subtitle_en').style.display='none';
+      document.getElementById('phone').textContent = '733520114';
+    });
+    document.getElementById('toEn').addEventListener('click', function(){
+      document.body.lang = 'en';
+      document.getElementById('desc_ar').style.display = 'none';
+      document.getElementById('desc_en').style.display = '';
+      document.getElementById('brandTitle_ar').style.display='none';
+      document.getElementById('brandTitle_en').style.display='';
+      document.getElementById('subtitle_ar').style.display='none';
+      document.getElementById('subtitle_en').style.display='';
+      document.getElementById('phone').textContent = '+967 733520114';
+    });
+
+    // generate QR to encode the page URL (works when hosted)
+    (function(){
+      var img = document.getElementById('qrImage');
+      var url = window.location.href || 'https://example.com/wahashi-landing.html';
+      var qr = 'https://chart.googleapis.com/chart?cht=qr&chs=360x360&chl=' + encodeURIComponent(url) + '&chld=L|1';
+      img.src = qr;
+    })();
+  </script>
+</body>
+</html>
